@@ -58,7 +58,7 @@ export default function StartProjectPage() {
 
   return (
     <main className="min-h-screen bg-background pb-24 pt-24">
-      <div className="container mx-auto px-6 mb-8">
+      <div className="container mx-auto px-6 flex justify-end mb-12">
         <Link href="/">
           <Button variant="outline" size="sm" className="rounded-full glass hover:bg-primary/10 transition-colors">
             <ArrowLeft className="mr-2 w-4 h-4" /> Back to Home
