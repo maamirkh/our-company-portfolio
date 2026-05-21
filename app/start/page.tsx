@@ -57,22 +57,16 @@ export default function StartProjectPage() {
   };
 
   return (
-    <main className="min-h-screen bg-background pb-24">
-      {/* Header */}
-      <div className="fixed top-0 left-0 right-0 z-50 glass py-4 border-b border-white/5">
-        <div className="container mx-auto px-6 flex items-center justify-between">
-          <Link href="/">
-            <Logo />
-          </Link>
-          <Link href="/">
-            <Button variant="outline" size="sm" className="rounded-full glass">
-              <ArrowLeft className="mr-2 w-4 h-4" /> Back to Home
-            </Button>
-          </Link>
-        </div>
+    <main className="min-h-screen bg-background pb-24 pt-24">
+      <div className="container mx-auto px-6 mb-8">
+        <Link href="/">
+          <Button variant="outline" size="sm" className="rounded-full glass hover:bg-primary/10 transition-colors">
+            <ArrowLeft className="mr-2 w-4 h-4" /> Back to Home
+          </Button>
+        </Link>
       </div>
 
-      <div className="container mx-auto px-6 pt-32">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           
           {/* Left Side: Content */}

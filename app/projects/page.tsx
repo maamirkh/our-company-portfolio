@@ -11,19 +11,13 @@ import { Button } from "@/components/ui/button";
 
 export default function AllProjectsPage() {
   return (
-    <main className="min-h-screen bg-background pt-32 pb-24">
-      {/* Simple Header for Projects Page */}
-      <div className="fixed top-0 left-0 right-0 z-50 glass py-4 border-b border-white/5">
-        <div className="container mx-auto px-6 flex items-center justify-between">
-          <Link href="/">
-            <Logo />
-          </Link>
-          <Link href="/">
-            <Button variant="outline" size="sm" className="rounded-full glass">
-              <ArrowLeft className="mr-2 w-4 h-4" /> Back to Home
-            </Button>
-          </Link>
-        </div>
+    <main className="min-h-screen bg-background pt-24 pb-24">
+      <div className="container mx-auto px-6 mb-8">
+        <Link href="/">
+          <Button variant="outline" size="sm" className="rounded-full glass hover:bg-primary/10 transition-colors">
+            <ArrowLeft className="mr-2 w-4 h-4" /> Back to Home
+          </Button>
+        </Link>
       </div>
 
       <div className="container mx-auto px-6">
