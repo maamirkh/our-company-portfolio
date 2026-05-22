@@ -49,11 +49,40 @@ const steps = [
 ];
 
 export default function StartProjectPage() {
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [submitted, setSubmitted] = React.useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    // Retrieve the Access Key from environment variables
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+    if (accessKey) {
+      formData.append("access_key", accessKey);
+    } else {
+      console.error("Web3Forms Access Key is missing in .env");
+    }
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -152,6 +181,7 @@ export default function StartProjectPage() {
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-white/80">Full Name</label>
                         <input
+                          name="name"
                           required
                           type="text"
                           placeholder="John Doe"
@@ -161,6 +191,7 @@ export default function StartProjectPage() {
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-white/80">Email Address</label>
                         <input
+                          name="email"
                           required
                           type="email"
                           placeholder="john@example.com"
@@ -171,7 +202,7 @@ export default function StartProjectPage() {
 
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-white/80">Project Category</label>
-                      <select className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors appearance-none">
+                      <select name="category" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors appearance-none">
                         <option className="bg-[#030303]">AI & Machine Learning</option>
                         <option className="bg-[#030303]">Fullstack Web App</option>
                         <option className="bg-[#030303]">3D Simulation / Interactive</option>
@@ -182,7 +213,7 @@ export default function StartProjectPage() {
 
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-white/80">Estimated Budget</label>
-                      <select className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors appearance-none">
+                      <select name="budget" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors appearance-none">
                         <option className="bg-[#030303]">$5k - $10k</option>
                         <option className="bg-[#030303]">$10k - $25k</option>
                         <option className="bg-[#030303]">$25k - $50k</option>
@@ -193,6 +224,7 @@ export default function StartProjectPage() {
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-white/80">Project Description</label>
                       <textarea
+                        name="message"
                         required
                         placeholder="Tell us about your goals, features, and timeline..."
                         rows={5}
@@ -200,8 +232,13 @@ export default function StartProjectPage() {
                       ></textarea>
                     </div>
 
-                    <Button type="submit" variant="premium" className="w-full py-7 text-lg rounded-xl shadow-[0_0_30px_rgba(59,130,246,0.3)]">
-                      Submit Project Application <Send className="ml-2 w-5 h-5" />
+                    <Button 
+                      type="submit" 
+                      disabled={isSubmitting} 
+                      variant="premium" 
+                      className="w-full py-7 text-lg rounded-xl shadow-[0_0_30px_rgba(59,130,246,0.3)]"
+                    >
+                      {isSubmitting ? "Submitting..." : "Submit Project Application"} <Send className="ml-2 w-5 h-5" />
                     </Button>
                     
                     <p className="text-[10px] text-center text-muted">
