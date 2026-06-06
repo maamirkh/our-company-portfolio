@@ -65,14 +65,14 @@ export function Contact() {
               className="text-muted text-lg mb-10"
             >
               Ready to take your business to the next level with AI and modern 
-              web technologies? Get in touch with us today.
+              web technologies? Get in touch with me today.
             </motion.p>
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "devsphereslt@gmail.com" },
+                { icon: Mail, label: "Email", value: "maamirkhan1983@gmail.com" },
                 { icon: MessageSquare, label: "WhatsApp", value: "+92-312-2072445" },
-                { icon: Phone, label: "Call Us", value: "+92-312-2072445" },
+                { icon: Phone, label: "Call Me", value: "+92-312-2072445" },
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
@@ -108,7 +108,7 @@ export function Contact() {
                     <CheckCircle2 className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
-                  <p className="text-muted mb-6">Thank you for reaching out. We'll get back to you soon.</p>
+                  <p className="text-muted mb-6">Thank you for reaching out. I'll get back to you soon.</p>
                   <Button onClick={() => setIsSuccess(false)} variant="outline">Send Another Message</Button>
                 </div>
               ) : (
@@ -149,7 +149,7 @@ export function Contact() {
                     <textarea
                       name="message"
                       required
-                      placeholder="Tell us about your project..."
+                      placeholder="Tell me about your project..."
                       rows={4}
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors"
                     ></textarea>

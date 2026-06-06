@@ -9,19 +9,19 @@ const testimonials = [
   {
     name: "Sarah Chen",
     role: "CEO at TechFlow",
-    text: "DevSphere transformed our vision into a reality. Their AI expertise helped us automate 40% of our customer support within months.",
+    text: "Muhammad Amir transformed our vision into a reality. His AI expertise helped us automate 40% of our customer support within months.",
     avatar: "SC",
   },
   {
     name: "James Wilson",
     role: "Founder of BuildIt",
-    text: "The construction estimation app they built for us is a game-changer. The UI is sleek, and the AI backend is incredibly accurate.",
+    text: "The construction estimation app he built for us is a game-changer. The UI is sleek, and the AI backend is incredibly accurate.",
     avatar: "JW",
   },
   {
     name: "Elena Rodriguez",
     role: "CTO at GlobaMark",
-    text: "Professional, fast, and highly skilled. They are our go-to partner for all things Next.js and Generative AI.",
+    text: "Professional, fast, and highly skilled. Muhammad is our go-to partner for all things Next.js and Generative AI.",
     avatar: "ER",
   },
 ];

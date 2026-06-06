@@ -20,21 +20,21 @@ export function About() {
               <span className="text-gradient">AI-First Development</span>
             </h2>
             <p className="text-muted text-lg mb-6 leading-relaxed">
-              DevSphere Solutions was born out of a vision to bridge the gap between 
+              My journey began with a vision to bridge the gap between 
               traditional software engineering and the rapidly evolving world of 
-              Artificial Intelligence. We don't just build websites; we build 
+              Artificial Intelligence. I don't just build websites; I build 
               intelligent systems that think, learn, and grow.
             </p>
             <p className="text-muted text-lg mb-8 leading-relaxed">
-              Our team of elite developers and AI researchers works at the 
+              As an AI Solutions Architect and Full-Stack Engineer, I work at the 
               intersection of design and technology to deliver products that 
               are not only visually stunning but also technically superior.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { icon: Target, title: "Our Mission", text: "To empower businesses with intelligent digital tools." },
-                { icon: Lightbulb, title: "Our Vision", text: "To be the global leader in AI-driven software innovation." },
+                { icon: Target, title: "My Mission", text: "To empower businesses with intelligent digital tools." },
+                { icon: Lightbulb, title: "My Vision", text: "To be a leader in AI-driven software innovation." },
               ].map((item, index) => (
                 <div key={item.title} className="flex space-x-4">
                   <div className="mt-1">
@@ -58,9 +58,9 @@ export function About() {
             <div className="relative z-10 glass p-8 rounded-3xl border-white/10 overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <BrainCircuit className="w-24 h-24 text-primary mb-8 animate-pulse" />
-              <h3 className="text-3xl font-bold mb-4">Startup-Focused <br />Innovation</h3>
+              <h3 className="text-3xl font-bold mb-4">Personalized <br />Innovation</h3>
               <p className="text-muted mb-6">
-                We specialize in helping startups move from idea to MVP in record 
+                I specialize in helping startups move from idea to MVP in record 
                 time, using agentic systems and spec-driven development to 
                 ensure precision and speed.
               </p>

@@ -31,7 +31,7 @@ export function Projects() {
               transition={{ delay: 0.1 }}
               className="text-muted text-lg"
             >
-              A showcase of our most innovative work in AI, 3D Simulations, 
+              A showcase of my most innovative work in AI, 3D Simulations, 
               and enterprise software solutions.
             </motion.p>
           </div>

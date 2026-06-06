@@ -35,7 +35,7 @@ export default function AllProjectsPage() {
             transition={{ delay: 0.1 }}
             className="text-muted text-lg max-w-2xl"
           >
-            A comprehensive list of our work, from AI-powered applications to 
+            A comprehensive list of my work, from AI-powered applications to 
             interactive 3D educational simulations.
           </motion.p>
         </div>

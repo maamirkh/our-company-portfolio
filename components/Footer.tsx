@@ -25,15 +25,14 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-muted">
               <li><Link href="#services" className="hover:text-primary transition-colors">AI Solutions</Link></li>
               <li><Link href="#services" className="hover:text-primary transition-colors">Web Development</Link></li>
-              <li><Link href="#services" className="hover:text-primary transition-colors">Mobile Apps</Link></li>
               <li><Link href="#services" className="hover:text-primary transition-colors">Cloud Systems</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6">Company</h4>
+            <h4 className="text-white font-bold mb-6">Profile</h4>
             <ul className="space-y-4 text-sm text-muted">
-              <li><Link href="#about" className="hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link href="#about" className="hover:text-primary transition-colors">About Me</Link></li>
               <li><Link href="#projects" className="hover:text-primary transition-colors">Projects</Link></li>
               <li><Link href="#process" className="hover:text-primary transition-colors">Process</Link></li>
               <li><Link href="#contact" className="hover:text-primary transition-colors">Contact</Link></li>
@@ -43,17 +42,21 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6">Connect</h4>
             <div className="flex space-x-4">
-              <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300 group">
+              <Link 
+                href="https://github.com/maamirkh" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300 group"
+              >
                 <GithubIcon className="w-5 h-5 text-white/80 group-hover:text-primary transition-colors" />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300 group">
-                <TwitterIcon className="w-5 h-5 text-white/80 group-hover:text-primary transition-colors" />
-              </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300 group">
+              <Link 
+                href="https://www.linkedin.com/in/muhammad-amir-677681202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300 group"
+              >
                 <LinkedinIcon className="w-5 h-5 text-white/80 group-hover:text-primary transition-colors" />
-              </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300 group">
-                <InstagramIcon className="w-5 h-5 text-white/80 group-hover:text-primary transition-colors" />
               </Link>
             </div>
           </div>
@@ -61,7 +64,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted text-xs">
-            © {new Date().getFullYear()} DevSphere Solutions. All rights reserved.
+            © {new Date().getFullYear()} Muhammad Amir. All rights reserved.
           </p>
           <div className="flex space-x-6 text-xs text-muted">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

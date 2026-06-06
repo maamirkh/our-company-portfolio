@@ -19,6 +19,8 @@ const technologies = [
   { name: "Stripe", category: "Payments", image: "/assets/stripe.png" },
   { name: "Payfast", category: "Payments", image: "/assets/payfast.png" },
   { name: "Framer Motion", category: "Design", image: "/assets/framer-motion.jpg" },
+  { name: "Docker", category: "DevOps", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Kubernetes", category: "DevOps", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
 ];
 
 export function TechStack() {
@@ -28,22 +30,22 @@ export function TechStack() {
         <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
           <div className="max-w-xl text-center md:text-left">
             <motion.h2
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-5xl font-bold mb-6"
+              className="text-4xl md:text-5xl font-bold mb-4"
             >
-              Our <span className="text-gradient">Tech Stack</span>
+              My <span className="text-gradient">Tech Stack</span>
             </motion.h2>
             <motion.p
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-muted text-lg"
+              className="text-muted text-lg max-w-2xl mx-auto"
             >
-              We use the most advanced and reliable technologies to build 
-              future-proof digital products.
+              I use the most advanced and reliable technologies to build
+              high-performance digital products that stand the test of time.
             </motion.p>
           </div>
           

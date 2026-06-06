@@ -67,7 +67,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="max-w-2xl mx-auto text-lg md:text-xl text-muted mb-10 leading-relaxed"
         >
-          We empower startups and enterprises with AI-first web technologies, 
+          I empower startups and enterprises with AI-first web technologies, 
           agentic systems, and scalable digital architectures that drive growth.
         </motion.p>
 
@@ -84,7 +84,7 @@ export function Hero() {
           </Link>
           <Link href="/projects">
             <Button variant="outline" size="lg" className="rounded-full px-8 glass">
-              View Our Work
+              View My Work
             </Button>
           </Link>
         </motion.div>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const steps = [
   {
     title: "Discovery",
-    description: "We dive deep into your business goals, challenges, and target audience.",
+    description: "I dive deep into your business goals, challenges, and target audience.",
   },
   {
     title: "Planning",
@@ -45,7 +45,7 @@ export function Process() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold mb-4"
           >
-            Our <span className="text-gradient">Workflow</span>
+            My <span className="text-gradient">Workflow</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

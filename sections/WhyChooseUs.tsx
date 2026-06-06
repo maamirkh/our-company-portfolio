@@ -27,7 +27,7 @@ export function WhyChooseUs() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold mb-4"
           >
-            Why <span className="text-gradient">Choose Us</span>
+            Why Choose <span className="text-gradient">Me</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -36,8 +36,8 @@ export function WhyChooseUs() {
             transition={{ delay: 0.1 }}
             className="text-muted text-lg max-w-2xl mx-auto"
           >
-            We combine technical excellence with business strategy to deliver 
-            exceptional digital products.
+            I combine technical excellence with business strategy to deliver
+            results that matter.
           </motion.p>
         </div>
 

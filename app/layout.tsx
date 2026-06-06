@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevSphere Solutions | AI-Powered Software Agency",
-  description: "Building intelligent digital experiences with AI & modern web technologies. We specialize in Next.js, Agentic AI, and scalable digital architectures.",
-  keywords: ["AI Software", "Next.js", "Agentic AI", "Web Development", "DevSphere Solutions"],
+  title: "Muhammad Amir | AI Solutions Architect & Full-Stack Engineer",
+  description: "Building intelligent digital experiences with AI & modern web technologies. Specializing in Next.js, Agentic AI, and scalable digital architectures.",
+  keywords: ["AI Solutions Architect", "Full-Stack Engineer", "Muhammad Amir", "Agentic AI", "Web Development"],
 };
 
 export default function RootLayout({

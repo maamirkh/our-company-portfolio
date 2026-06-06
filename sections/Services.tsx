@@ -93,7 +93,7 @@ export function Services() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold mb-4"
           >
-            Our <span className="text-gradient">Core Services</span>
+            My <span className="text-gradient">Core Services</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -102,8 +102,8 @@ export function Services() {
             transition={{ delay: 0.1 }}
             className="text-muted text-lg max-w-2xl mx-auto"
           >
-            We deliver cutting-edge technology solutions that help your business
-            scale and thrive in the AI era.
+            I deliver cutting-edge technology solutions that help your business
+            scale and succeed in the age of Artificial Intelligence.
           </motion.p>
         </div>
 

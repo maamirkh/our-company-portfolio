@@ -111,7 +111,7 @@ export default function StartProjectPage() {
               </h1>
               <p className="text-muted text-lg mb-10 max-w-lg">
                 Whether you're a startup looking for an MVP or an enterprise 
-                scaling with AI, DevSphere Solutions is your strategic partner.
+                scaling with AI, Muhammad Amir is your strategic partner.
               </p>
 
               <div className="space-y-8 mb-12">

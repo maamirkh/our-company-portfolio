@@ -48,7 +48,7 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-muted hover:text-white transition-all duration-300 relative group"
+              className="text-sm font-medium text-white/80 hover:text-white transition-all duration-300 relative group"
             >
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -84,7 +84,7 @@ export function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-lg font-medium text-muted hover:text-white"
+                  className="text-lg font-medium text-white/90 hover:text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
